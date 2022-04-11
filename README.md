@@ -12,7 +12,7 @@ pip3 install -r requirements.txt
 
 ## Reproducing the Results from the paper:
 
-**NOTE**: You need a working copy of Wikidata and DBPedia KGs to replicate the experiment results.
+**NOTE**: You need a working copy of Wikidata and DBPedia KGs to replicate the experiment results. Specify the URL of DBPedia KG endpoint in pgn-bert/lcq1/Pointer-Generator-Networks/kbstats3253_corrctor.py and Wikidata endpoint in pgn-bert/lcq2/Pointer-Generator-Networks/kbstats3253_corrctor.py  in the hitkg() function.
 
 ### PGN-BERT LC-QuAD 1.0
 Download pre-trained models from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/pgn-bert-lcq1-models.tgz. Download input vectors from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/bertlcq1.tgz. Unpack both inside pgn-bert/lcq1/Pointer-Generator-Networks. To run inference and evaluation on the 5 folds:
