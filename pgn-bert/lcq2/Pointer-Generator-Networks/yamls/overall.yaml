@@ -4,7 +4,7 @@ use_gpu: True
 seed: 2021
 state: INFO
 reproducibility: False
-data_path: '/data/banerjee/sigir/datasets/vectors/bertlcq2/'
+data_path: './bertlcq2/'
 checkpoint_dir: 'shuf_saved_bert_lcq2'
 generated_text_dir: 'shuf_generated_bert_lcq2'
 plot: True
