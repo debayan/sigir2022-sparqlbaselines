@@ -35,3 +35,18 @@ cd pgn-bert/lcq2/Pointer-Generator-Networks/
 CUDA_VISIBLE_DEVICES=0 python eval.py shuf_saved_bert_lcq2/Fire-At-Feb-14-2022_00-37-46.pth bert_bert_classify_results_1/checkpoint-5000/
 ```
 Logs for the inference and evaluation are available at https://github.com/debayan/sigir2022-sparqlbaselines/blob/main/pgn-bert/lcq2/Pointer-Generator-Networks/logberteval1.tgz.
+
+### T5-BART LC-QuAD 1.0
+Download the pretrained models for LC-QuAD 1.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. Place the BART-base checkpoint in `ptlm/lcquad1/bart`, place the T5-base checkpoint in `ptlm/lcquad1/base`, and place the T5-small checkpoint in `ptlm/lcquad1/small`. Now run the following:
+```
+cd ptlm/lcquad1
+bash eval.sh
+```
+
+### T5-BART LC-QuAD 2.0
+Download the pretrained models for LC-QuAD 2.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. Place the downloaded checkpoints in `ptlm/lcquad2` and run:
+```
+cd ptlm/lcquad2
+bash eval.sh
+```
+
