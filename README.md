@@ -42,11 +42,21 @@ Download the pretrained models for LC-QuAD 1.0 from https://ltdata1.informatik.u
 cd ptlm/lcquad1
 bash eval.sh
 ```
+To train the models run the following:
+```
+cd ptlm/lcquad1
+bash train.sh
+```
 
 ### T5-BART LC-QuAD 2.0
 Download the pretrained models for LC-QuAD 2.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. Place the downloaded checkpoints in `ptlm/lcquad2` and run:
 ```
 cd ptlm/lcquad2
 bash eval.sh
+```
+To train the models run the following:
+```
+cd ptlm/lcquad1
+bash train.sh
 ```
 
