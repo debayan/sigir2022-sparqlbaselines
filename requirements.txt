@@ -56,3 +56,4 @@ Werkzeug==2.1.1
 xxhash==3.0.0
 yarl==1.7.2
 zipp==3.8.0
+sentencepiece==0.1.96
