@@ -117,6 +117,6 @@ if __name__=='__main__':
     args=setup()
     print('Prediction Followed by Target\n\n')
     for i in range(1,6):
-        accuracy,mrr,total=split_acc(args.save_dir+'/split'+str(i)+'_test_result.json',i,accuracy,mrr,total)
+        accuracy,mrr,total=split_acc(args.save_dir+'/split_mix'+str(i)+'_test_result.json',i,accuracy,mrr,total)
         
 #    print(accuracy/5)
