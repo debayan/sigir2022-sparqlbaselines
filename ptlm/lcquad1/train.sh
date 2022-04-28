@@ -54,3 +54,4 @@ python3 Train_BART.py --split_file mix/split_mix4.pickle --model_name facebook/b
 
 echo "Training BART base on the fifth split for LCQUAD 1.0"
 python3 Train_BART.py --split_file mix/split_mix5.pickle --model_name facebook/bart-base --save_dir bart
+
