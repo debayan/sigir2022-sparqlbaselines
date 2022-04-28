@@ -92,6 +92,7 @@ class Train:
                 return model_inputs
 
         def val(self,o):
+                print('Evaluating ...')
                 self.model.eval()
                 acc,bs,i=0,self.eval_bs,0
                 saver=[]
