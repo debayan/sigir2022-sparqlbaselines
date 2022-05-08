@@ -1,0 +1,12 @@
+embedding_size: 968
+hidden_size: 968
+num_enc_layers: 2
+bidirectional: True
+num_dec_layers: 2
+dropout_ratio: 0.3
+decoding_strategy: 'beam_search'
+beam_size: 10
+is_attention: True
+is_pgen: True
+is_coverage: False
+cov_loss_lambda: 1.0
