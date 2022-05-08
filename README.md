@@ -1,4 +1,4 @@
-
+  
 # SIGIR2022 Short Paper : Modern Baselines for SPARQL Semantic Parsing
 
 ### Create virtualenv
@@ -15,6 +15,21 @@ pip3 install -r requirements.txt
 **NOTE**: You need a working copy of Wikidata and DBPedia KGs to replicate the experiment results. Specify the URL of DBPedia KG endpoint in pgn-bert/lcq1/Pointer-Generator-Networks/kbstats3253_corrctor.py and Wikidata endpoint in pgn-bert/lcq2/Pointer-Generator-Networks/kbstats3253_corrctor.py  in the hitkg() function.
 
 ### PGN-BERT LC-QuAD 1.0
+
+## Train
+
+```
+cd pgn-bert/lcq1/train/
+```
+
+Download vectorised inputs from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/bertlcq1.tgz. Unzip it in the current folder. To run the training for fold 1 :
+
+```
+CUDA_VISIBLE_DEVICES=0 python fire.py 1
+``` 
+For the other folds, 1-5, change the command line argument accordingly.
+
+## Eval
 Download pre-trained models from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/pgn-bert-lcq1-models.tgz. Download input vectors from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/bertlcq1.tgz. Unpack both inside pgn-bert/lcq1/Pointer-Generator-Networks. To run inference and evaluation on the 5 folds:
 
 ```
@@ -28,6 +43,20 @@ CUDA_VISIBLE_DEVICES=0 python eval.py 5 bert_classify_results_5/checkpoint-16500
 Logs for the inference and evaluation for the 5 folds are available at https://github.com/debayan/sigir2022-sparqlbaselines/tree/main/pgn-bert/lcq1/Pointer-Generator-Networks/logbertbert. 
 
 ### PGN-BERT LC-QuAD 2.0
+
+## Train
+
+```
+cd pgn-bert/lcq2/train/
+```
+Download vectorised inputs from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/bertlcq2.tgz. Unzip it in the current folder. To run the training :
+
+```
+CUDA_VISIBLE_DEVICES=0 python fire.py
+``` 
+
+## Eval
+
 Download pre-trained model and input vectors from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/pgn-bert-lcq2-models.tgz and https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/bertlcq2.tar respectively. Unpack them into pgn-bert/lcq2/Pointer-Generator-Networks. To run inference and evaluation:
 
 ```
@@ -63,4 +92,3 @@ To train the models run the following:
 cd ptlm/lcquad1
 bash train.sh
 ```
-
