@@ -1,0 +1,24 @@
+# general
+gpu_id: 0
+use_gpu: True
+seed: 2021
+state: INFO
+reproducibility: False
+data_path: './bertlcq2/'
+checkpoint_dir: 'shuf_saved_bert_lcq2'
+generated_text_dir: 'shuf_generated_bert_lcq2'
+plot: True
+
+# training settings
+epochs: 15
+warmup_epochs: 1
+iters_per_epoch: 700
+train_batch_size: 32
+learner: adam
+learning_rate: 0.001
+eval_step: -1
+stopping_step: 
+grad_clip: 1.0
+
+# evaluation settings
+eval_batch_size: 100
