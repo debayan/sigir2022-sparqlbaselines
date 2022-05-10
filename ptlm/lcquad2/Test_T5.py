@@ -1,6 +1,7 @@
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 import json
+import os
 
 import torch
 import pickle
@@ -141,6 +142,7 @@ class Test:
                     temps='small_'+temps
                 else:
                     temps='T5_'+temps
+                print('Saving to {}'.format(os.getcwd()))
                 file=open(temps+'test_result.json','w')
                 json.dump(saver,file)
                 file.close()
