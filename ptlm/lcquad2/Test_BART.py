@@ -1,6 +1,7 @@
 from transformers import BartTokenizer, BartForConditionalGeneration
 
 import json
+import os
 
 import torch
 import pickle
@@ -147,6 +148,7 @@ class Test:
                 temps=''
                 if 'mix' in self.args.test_file:
                     temps='mix_'
+                print('Saving to {}'.format(os.getcwd())) 
                 file=open('BART_'+temps+'test_result.json','w')
                 json.dump(saver,file)
                 file.close()
