@@ -70,7 +70,7 @@ Logs for the inference and evaluation are available at https://github.com/debaya
 
 **NOTE**: Specify the URL of DBPedia KG endpoint in hitkg() funtion in `ptlm/lcquad1/temp_F1.py` and Wikidata endpoint in hitkg() function in `ptlm/lcquad2/get_F1.py`.
 
-Download the pretrained models for LC-QuAD 1.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. Place the BART-base checkpoint in `ptlm/lcquad1/bart`, place the T5-base checkpoint in `ptlm/lcquad1/base`, and place the T5-small checkpoint in `ptlm/lcquad1/small`. Now run the following:
+Download the pretrained models for LC-QuAD 1.0 and LC-QUAD 2.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. For LC-QuAD 1.0: Place the BART-base checkpoint in `ptlm/lcquad1/bart`, place the T5-base checkpoint in `ptlm/lcquad1/base`, and place the T5-small checkpoint in `ptlm/lcquad1/small`. For LC-QuAD 2.0: Place all the checkpoints in `ptlm/lcquad2`. Now run the following:
 ```
 cd ptlm/lcquad1
 bash eval.sh
@@ -82,7 +82,6 @@ bash train.sh
 ```
 
 ### T5-BART LC-QuAD 2.0
-Download the pretrained models for LC-QuAD 2.0 from https://ltdata1.informatik.uni-hamburg.de/debayansigir2022-sparqlbaselines/checkpoints_SIGIR_PTLM.zip. Place the downloaded checkpoints in `ptlm/lcquad2` and run:
 ```
 cd ptlm/lcquad2
 bash eval.sh
