@@ -1,6 +1,7 @@
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 import json
+import os
 
 import torch
 import pickle
@@ -136,6 +137,8 @@ class Test:
                             
                         saver.append(dict)
                 
+                path=os.getcwd()+'/'+self.args.save_dir
+                print('Saving to {}'.format(path))
                 file=open(self.args.save_dir+'/split'+str(self.split)+'_test_result.json','w')
                 json.dump(saver,file)
                 file.close()
