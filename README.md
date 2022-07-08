@@ -95,19 +95,18 @@ If you wish to cite, please use the following:
 
 ```
 @inproceedings{10.1145/3477495.3531841,
-author = {Banerjee, Debayan and Nair, Pranav Ajit and Kaur, Jivat Neet and Usbeck, Ricardo and Biemann, Chris},
-title = {Modern Baselines for SPARQL Semantic Parsing},
-year = {2022},
-isbn = {9781450387323},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3477495.3531841},
-doi = {10.1145/3477495.3531841},
-booktitle = {Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-pages = {2260–2265},
-numpages = {6},
-keywords = {question answering, semantic parsing, sparql, knowledge graph},
-location = {Madrid, Spain},
-series = {SIGIR '22}
+    author = {Banerjee, Debayan and Nair, Pranav Ajit and Kaur, Jivat Neet and Usbeck, Ricardo and Biemann, Chris},
+    title = {Modern Baselines for SPARQL Semantic Parsing},
+    year = {2022},
+    isbn = {9781450387323},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3477495.3531841},
+    doi = {10.1145/3477495.3531841},
+    booktitle = {Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+    pages = {2260–2265},
+    numpages = {6},
+    location = {Madrid, Spain},
+    series = {SIGIR '22}
 }
 ```
