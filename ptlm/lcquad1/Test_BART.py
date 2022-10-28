@@ -60,7 +60,7 @@ class Test:
                 self.eval_bs=8
                 self.beam=args.beam_length
 
-                self.agrs=args
+                self.args=args
                 
                 params=torch.load(args.save_dir+'/'+args.checkpoint);
                 self.model.load_state_dict(params);
